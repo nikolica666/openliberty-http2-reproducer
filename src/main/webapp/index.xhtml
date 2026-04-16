@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="jakarta.faces.html"
+      xmlns:ui="jakarta.faces.facelets"
+      xmlns:f="jakarta.faces.core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head />
+<h:body>
+
+    <h:form>
+        <p:commandButton value="Show PDF in p:dialog" oncomplete="PF('pdfDlg').show()" />
+    </h:form>
+
+    <p:dialog widgetVar="pdfDlg">
+        <p:media value="/resources/primefaces-guide.pdf" />
+    </p:dialog>
+
+</h:body>
+</html>
